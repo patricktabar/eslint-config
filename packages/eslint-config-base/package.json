@@ -25,11 +25,7 @@
     "configuration"
   ],
   "scripts": {
-    "build": "echo 'build base'",
-    "dev": "echo 'dev base'",
-    "lint": "turbo lint",
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "test": "echo 'test eslint-config-base'"
   },
   "devDependencies": {
     "@patricktabar/prettier-config": "^1.3.6",
