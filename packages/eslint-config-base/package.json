@@ -1,10 +1,11 @@
 {
-  "name": "@patricktabar/eslint-config-source",
+  "name": "@patricktabar/eslint-config-base",
   "author": "Patrick Tabarelli <patrick.tabarelli@gmail.com>",
   "license": "MIT",
   "version": "1.0.0",
   "private": false,
   "description": "A monorepo for personal, shareable ESlint configurations",
+  "main": "index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -24,8 +25,8 @@
     "configuration"
   ],
   "scripts": {
-    "build": "echo build",
-    "dev": "echo dev",
+    "build": "echo 'build base'",
+    "dev": "echo 'dev base'",
     "lint": "turbo lint",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
