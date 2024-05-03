@@ -6,18 +6,6 @@ module.exports = {
   'array-callback-return': ['error', { allowImplicit: true }], // TODO: move in possible problems group
 
   /**
-   * Enforce getter and setter pairs in objects and classes
-   * https://eslint.org/docs/rules/accessor-pairs
-   */
-  'accessor-pairs': 'warn',
-
-  /**
-   * Require braces around arrow function bodies
-   * https://eslint.org/docs/latest/rules/arrow-body-style
-   */
-  'arrow-body-style': ['warn', 'as-needed'],
-
-  /**
    * Enforce camelcase naming convention
    * https://eslint.org/docs/latest/rules/camelcase
    */
@@ -28,18 +16,6 @@ module.exports = {
    * https://eslint.org/docs/latest/rules/capitalized-comments
    */
   'capitalized-comments': 'off',
-
-  /**
-   * Enforce the use of variables within the scope they are defined
-   * https://eslint.org/docs/latest/rules/block-scoped-var
-   */
-  'block-scoped-var': 'error',
-
-  /**
-   * Enforce that class methods utilize this
-   * https://eslint.org/docs/latest/rules/class-methods-use-this
-   */
-  'class-methods-use-this': 'off',
 
   /**
    * Enforce a maximum cyclomatic complexity allowed in a program
@@ -97,31 +73,6 @@ module.exports = {
   eqeqeq: ['error', 'smart'],
 
   /**
-   * Require function names to match the name of the variable or property
-   * to which they are assigned
-   * https://eslint.org/docs/latest/rules/func-name-matching
-   */
-  'func-name-matching': 'off',
-
-  /**
-   * Require or disallow named function expressions
-   * https://eslint.org/docs/latest/rules/func-names
-   */
-  'func-names': 'off',
-
-  /**
-   * Enforce the consistent use of either function declarations or expressions
-   * https://eslint.org/docs/latest/rules/func-style
-   */
-  'func-style': 'off',
-
-  /**
-   * Require grouped accessor pairs in object literals and classes
-   * https://eslint.org/docs/latest/rules/grouped-accessor-pairs
-   */
-  'grouped-accessor-pairs': ['error', 'anyOrder'],
-
-  /**
    * Require for-in loops to include an if statement
    * https://eslint.org/docs/latest/rules/guard-for-in
    */
@@ -134,22 +85,10 @@ module.exports = {
   'id-denylist': 'off',
 
   /**
-   * Require or disallow initialization in variable declarations
-   * https://eslint.org/docs/latest/rules/init-declarations
-   */
-  'init-declarations': 'off',
-
-  /**
    * Require or disallow logical assignment operator shorthand
    * https://eslint.org/docs/latest/rules/logical-assignment-operators
    */
   'logical-assignment-operators': 'off',
-
-  /**
-   * Enforce a maximum number of classes per file
-   * https://eslint.org/docs/latest/rules/max-classes-per-file
-   */
-  'max-classes-per-file': 'off',
 
   /**
    * Enforce a maximum depth that blocks can be nested
@@ -171,28 +110,10 @@ module.exports = {
   ],
 
   /**
-   * Enforce a maximum number of lines of code in a function
-   * https://eslint.org/docs/latest/rules/max-lines-per-function
-   */
-  'max-lines-per-function': 'off',
-
-  /**
    * Enforce a maximum depth that callbacks can be nested
    * https://eslint.org/docs/latest/rules/max-nested-callbacks
    */
   'max-nested-callbacks': ['warn', 4],
-
-  /**
-   * Enforce a maximum number of parameters in function definitions
-   * https://eslint.org/docs/latest/rules/max-params
-   */
-  'max-params': ['warn', 3],
-
-  /**
-   * Enforce a maximum number of statements allowed in function blocks
-   * https://eslint.org/docs/latest/rules/max-statements
-   */
-  'max-statements': ['warn', 10],
 
   /**
    * Enforce a particular style for multiline comments
@@ -256,18 +177,6 @@ module.exports = {
   'no-continue': 'off',
 
   /**
-   * Disallow deleting variables
-   * https://eslint.org/docs/latest/rules/no-delete-var
-   */
-  'no-delete-var': 'warn',
-
-  /**
-   * Disallow equal signs explicitly at the beginning of regular expressions
-   * https://eslint.org/docs/latest/rules/no-div-regex
-   */
-  'no-div-regex': 'warn',
-
-  /**
    * Disallow else blocks after return statements in if statements
    * https://eslint.org/docs/latest/rules/no-else-return
    */
@@ -278,17 +187,6 @@ module.exports = {
    * https://eslint.org/docs/latest/rules/no-empty
    */
   'no-empty': 'error',
-
-  /**
-   *  Disallow empty functions
-   * https://eslint.org/docs/latest/rules/no-empty-function
-   */
-  'no-empty-function': [
-    'error',
-    {
-      allow: ['arrowFunctions', 'functions', 'methods'],
-    },
-  ],
 
   /**
    * Disallow empty static blocks
@@ -399,12 +297,6 @@ module.exports = {
   'no-lonely-if': 'warn',
 
   /**
-   * Disallow function declarations that contain unsafe references inside loop statements
-   * https://eslint.org/docs/latest/rules/no-loop-func
-   */
-  'no-loop-func': 'error',
-
-  /**
    * Disallow magic numbers
    * https://eslint.org/docs/latest/rules/no-magic-numbers
    */
@@ -441,12 +333,6 @@ module.exports = {
   'no-new': 'warn',
 
   /**
-   * Disallow new operators with the Function object
-   * https://eslint.org/docs/latest/rules/no-new-func
-   */
-  'no-new-func': 'error',
-
-  /**
    * Disallow new operators with the String, Number, and Boolean objects
    * https://eslint.org/docs/latest/rules/no-new-wrappers
    */
@@ -457,12 +343,6 @@ module.exports = {
    * https://eslint.org/docs/latest/rules/no-nonoctal-decimal-escape
    */
   'no-nonoctal-decimal-escape': 'error',
-
-  /**
-   * Disallow calls to the Object constructor without an argument
-   * https://eslint.org/docs/latest/rules/no-object-constructor
-   */
-  'no-object-constructor': 'warn',
 
   /**
    * Disallow octal literals
@@ -477,12 +357,6 @@ module.exports = {
   'no-octal-escape': 'error',
 
   /**
-   * Disallow reassigning function parameters
-   * https://eslint.org/docs/latest/rules/no-param-reassign
-   */
-  'no-param-reassign': 'error',
-
-  /**
    * Disallow the unary operators ++ and --
    * https://eslint.org/docs/latest/rules/no-plusplus
    */
@@ -495,40 +369,16 @@ module.exports = {
   'no-proto': 'error',
 
   /**
-   * Disallow variable redeclaration
-   * https://eslint.org/docs/latest/rules/no-redeclare
-   */
-  'no-redeclare': 'error',
-
-  /**
-   * Disallow multiple spaces in regular expressions
-   * https://eslint.org/docs/latest/rules/no-regex-spaces
-   */
-  'no-regex-spaces': 'off',
-
-  /**
    * Disallow specified names in exports
    * https://eslint.org/docs/latest/rules/no-restricted-exports
    */
   'no-restricted-exports': 'off',
 
   /**
-   * Disallow specified global variables
-   * https://eslint.org/docs/latest/rules/no-restricted-globals
-   */
-  'no-restricted-globals': 'off',
-
-  /**
    * Disallow specified modules when loaded by import
    * https://eslint.org/docs/latest/rules/no-restricted-imports
    */
   'no-restricted-imports': 'off',
-
-  /**
-   * Disallow certain properties on certain objects
-   * https://eslint.org/docs/latest/rules/no-restricted-properties
-   */
-  'no-restricted-properties': 'off',
 
   /**
    * Disallow specified syntax
@@ -555,12 +405,6 @@ module.exports = {
   'no-sequences': 'error',
 
   /**
-   * Disallow variable declarations from shadowing variables declared in the outer scope
-   * https://eslint.org/docs/latest/rules/no-shadow
-   */
-  'no-shadow': 'error',
-
-  /**
    * Disallow identifiers from shadowing restricted names
    * https://eslint.org/docs/latest/rules/no-shadow-restricted-names
    */
@@ -577,12 +421,6 @@ module.exports = {
    * https://eslint.org/docs/latest/rules/no-throw-literal
    */
   'no-throw-literal': 'error',
-
-  /**
-   * Disallow initializing variables to undefined
-   * https://eslint.org/docs/latest/rules/no-undef-init
-   */
-  'no-undef-init': 'error',
 
   /**
    * Disallow the use of undefined as an identifier
@@ -625,12 +463,6 @@ module.exports = {
    * https://eslint.org/docs/latest/rules/no-useless-catch
    */
   'no-useless-catch': 'warn',
-
-  /**
-   * Disallow unnecessary computed property keys in objects and classes
-   * https://eslint.org/docs/latest/rules/no-useless-computed-key
-   */
-  'no-useless-computed-key': 'error',
 
   /**
    * Disallow unnecessary concatenation of literals or template literals
@@ -687,34 +519,10 @@ module.exports = {
   'no-with': 'error',
 
   /**
-   * Require or disallow method and property shorthand syntax for object literals
-   * https://eslint.org/docs/latest/rules/object-shorthand
-   */
-  'object-shorthand': ['error', 'always'],
-
-  /**
-   * Enforce variables to be declared either together or separately in functions
-   * https://eslint.org/docs/latest/rules/one-var
-   */
-  'one-var': 'off',
-
-  /**
    * Require or disallow assignment operator shorthand where possible
    * https://eslint.org/docs/latest/rules/operator-assignment
    */
   'operator-assignment': 'off',
-
-  /**
-   * Require using arrow functions for callbacks
-   * https://eslint.org/docs/latest/rules/prefer-arrow-callback
-   */
-  'prefer-arrow-callback': 'off',
-
-  /**
-   * Require const declarations for variables that are never reassigned after declared
-   * https://eslint.org/docs/latest/rules/prefer-const
-   */
-  'prefer-const': 'error',
 
   /**
    * Require destructuring from arrays and/or objects
@@ -741,29 +549,10 @@ module.exports = {
   'prefer-numeric-literals': 'off',
 
   /**
-   * Disallow use of Object.prototype.hasOwnProperty.call() and prefer use of Object.hasOwn()
-   * https://eslint.org/docs/latest/rules/prefer-object-has-own
-   */
-  'prefer-object-has-own': 'error',
-
-  /**
-   * Disallow using Object.assign with an object literal as the first argument
-   * and prefer the use of object spread instead
-   * https://eslint.org/docs/latest/rules/prefer-object-spread
-   */
-  'prefer-object-spread': 'off',
-
-  /**
    * Require using Error objects as Promise rejection reasons
    * https://eslint.org/docs/latest/rules/prefer-promise-reject-errors
    */
   'prefer-promise-reject-errors': 'off',
-
-  /**
-   * Disallow use of the RegExp constructor in favor of regular expression literals
-   * https://eslint.org/docs/latest/rules/prefer-regex-literals
-   */
-  'prefer-regex-literals': 'off',
 
   /**
    * Require rest parameters instead of arguments
@@ -796,12 +585,6 @@ module.exports = {
   'require-await': 'off',
 
   /**
-   * Enforce the use of u or v flag on RegExp
-   * https://eslint.org/docs/latest/rules/require-unicode-regexp
-   */
-  'require-unicode-regexp': 'off',
-
-  /**
    * Require generator functions to contain yield
    * https://eslint.org/docs/latest/rules/require-yield
    */
@@ -812,12 +595,6 @@ module.exports = {
    * https://eslint.org/docs/latest/rules/sort-imports
    */
   'sort-imports': 'off',
-
-  /**
-   * Require object keys to be sorted
-   * https://eslint.org/docs/latest/rules/sort-keys
-   */
-  'sort-keys': 'off',
 
   /**
    * Require variables within the same declaration block to be sorted
