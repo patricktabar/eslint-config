@@ -625,4 +625,16 @@ module.exports = {
    * https://eslint.org/docs/latest/rules/yoda
    */
   yoda: 'error',
+
+  /**
+   * Enforce position of line comments
+   * https://eslint.org/docs/latest/rules/line-comment-position
+   */
+  'line-comment-position': 'off',
+
+  /**
+   * Require or disallow Unicode byte order mark (BOM)
+   * https://eslint.org/docs/latest/rules/unicode-bom
+   */
+  'unicode-bom': ['error', 'never'],
 };
