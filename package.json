@@ -5,17 +5,20 @@
   "version": "1.0.0",
   "private": false,
   "description": "A monorepo for personal, shareable ESlint configurations",
+  "workspaces": [
+    "packages/*"
+  ],
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/patricktabar/[name]",
+  "homepage": "https://github.com/patricktabar/eslint-config",
   "bugs": {
-    "url": "https://github.com/patricktabar/[name]/issues",
+    "url": "https://github.com/patricktabar/eslint-config/issues",
     "email": "patrick.tabarelli@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patricktabar/[name].git"
+    "url": "git+https://github.com/patricktabar/eslint-config.git"
   },
   "keywords": [
     "eslint",
@@ -29,7 +32,10 @@
     "lint": "turbo lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "change": "npx changeset",
+    "version": "npx changeset version",
+    "release": "npx changeset publish"
   },
   "devDependencies": {
     "@patricktabar/prettier-config": "^1.3.6",
@@ -45,5 +51,8 @@
   },
   "peerDependencies": {
     "eslint": "^9.2.0"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.3"
   }
 }
