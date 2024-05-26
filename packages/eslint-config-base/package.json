@@ -6,17 +6,18 @@
   "private": false,
   "description": "A monorepo for personal, shareable ESlint configurations",
   "main": "index.js",
+  "types": "types/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/patricktabar/[name]",
+  "homepage": "https://github.com/patricktabar/eslint-config",
   "bugs": {
-    "url": "https://github.com/patricktabar/[name]/issues",
+    "url": "https://github.com/patricktabar/eslint-config/issues",
     "email": "patrick.tabarelli@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patricktabar/[name].git"
+    "url": "git+https://github.com/patricktabar/eslint-config.git"
   },
   "keywords": [
     "eslint",
@@ -31,6 +32,9 @@
     "@patricktabar/prettier-config": "^1.3.6",
     "prettier": "^3.2.5",
     "turbo": "latest"
+  },
+  "peerDependencies": {
+    "eslint": ">= 9"
   },
   "packageManager": "pnpm@8.9.0",
   "engines": {

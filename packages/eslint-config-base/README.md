@@ -1,5 +1,13 @@
 # ESlint Base Configuration
 
+## Installation
+
+You can install this ESLint configuration using npm:
+
+```shell
+npm install @patricktabar/eslint-config-base --save-dev
+```
+
 ## Using this Shareable Configuration
 
 To use a shareable config, import the package inside of an eslint.config.js file and add it into the exported array, like this:
