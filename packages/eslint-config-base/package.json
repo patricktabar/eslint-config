@@ -4,7 +4,7 @@
   "license": "MIT",
   "version": "1.0.0",
   "private": false,
-  "description": "A monorepo for personal, shareable ESlint configurations",
+  "description": "Personal, shareable base ESlint configurations",
   "main": "index.js",
   "types": "types/index.d.ts",
   "publishConfig": {
