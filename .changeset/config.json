@@ -7,11 +7,7 @@
     }
   ],
   "commit": false,
-  "fixed": [
-    [
-      "@patricktabar/*"
-    ]
-  ],
+  "fixed": [["@patricktabar/*"]],
   "linked": [],
   "access": "restricted",
   "baseBranch": "main",
