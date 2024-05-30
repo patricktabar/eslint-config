@@ -1,5 +1,11 @@
 # @patricktabar/eslint-config-base
 
+## 1.2.0
+
+### Minor Changes
+
+- 69b1033: Initial react eslint config
+
 ## 1.1.1
 
 ### Patch Changes
