@@ -48,7 +48,7 @@
     "node": ">=18"
   },
   "dependencies": {
-    "@patricktabar/eslint-config-base": "^1.2.0",
+    "@patricktabar/eslint-config-base": "^1.1.0",
     "@stylistic/eslint-plugin": "^2.1.0"
   }
 }
