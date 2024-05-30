@@ -5,7 +5,7 @@
 You can install this ESLint configuration using npm:
 
 ```shell
-npm install @patricktabar/eslint-config-base --save-dev
+npm install @patricktabar/eslint-config-react --save-dev
 ```
 
 ## Using this Shareable Configuration
@@ -15,7 +15,7 @@ To use a shareable config, import the package inside of an eslint.config.js file
 ```js
 // eslint.config.js
 
-import configBase from '@patricktabar/eslint-config-base';
+import configBase from '@patricktabar/eslint-config-react';
 
 export default [...configBase];
 ```
@@ -27,7 +27,7 @@ You can override settings from the shareable config by adding them directly into
 ```js
 // eslint.config.js
 
-import configBase from '@patricktabar/eslint-config-base';
+import configBase from '@patricktabar/eslint-config-react';
 
 export default [
   ...configBase,
