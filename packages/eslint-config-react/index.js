@@ -1,15 +1,17 @@
 module.exports = {
   extends: [
     '@stylistic/eslint-plugin',
-    './rules/best-practice.js',
-    './rules/regex.js',
-    './rules/object-classes.js',
-    './rules/functions.js',
-    './rules/variables.js',
+    '@patricktabar/eslint-config-base',
+    './rules/react.js',
+    './rules/hooks.js',
+    './rules/a11y.js',
   ].map((path) => require.resolve(path)),
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   rules: {},
 };

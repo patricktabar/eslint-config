@@ -1,5 +1,5 @@
 {
-  "name": "@patricktabar/eslint-config-base",
+  "name": "@patricktabar/eslint-config-react",
   "author": "Patrick Tabarelli <patrick.tabarelli@gmail.com>",
   "license": "MIT",
   "version": "1.1.0",
@@ -23,24 +23,32 @@
     "eslint",
     "eslintconfig",
     "config",
-    "configuration"
+    "configuration",
+    "react"
   ],
   "scripts": {
-    "test": "echo 'test eslint-config-base'"
+    "test": "echo 'test eslint-config-react'"
   },
   "devDependencies": {
     "@patricktabar/prettier-config": "^1.3.6",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
     "prettier": "^3.2.5",
     "turbo": "latest"
   },
   "peerDependencies": {
-    "eslint": ">= 9"
+    "eslint": ">= 9",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^4.6.2"
   },
   "packageManager": "pnpm@9.0.6",
   "engines": {
     "node": ">=18"
   },
   "dependencies": {
+    "@patricktabar/eslint-config-base": "^1.1.1",
     "@stylistic/eslint-plugin": "^2.1.0"
   }
 }
