@@ -2,7 +2,7 @@
   "name": "@patricktabar/eslint-config-base",
   "author": "Patrick Tabarelli <patrick.tabarelli@gmail.com>",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": false,
   "description": "Personal, shareable base ESlint configurations",
   "main": "index.js",
