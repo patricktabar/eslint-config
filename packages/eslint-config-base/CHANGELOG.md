@@ -4,6 +4,12 @@
 
 ### Minor Changes
 
+- d891229: workflows config
+
+## 1.2.0
+
+### Minor Changes
+
 - 69b1033: Initial react eslint config
 
 ## 1.1.1

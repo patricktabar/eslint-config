@@ -2,7 +2,7 @@
   "name": "@patricktabar/eslint-config-react",
   "author": "Patrick Tabarelli <patrick.tabarelli@gmail.com>",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": false,
   "description": "Personal, shareable base ESlint configurations",
   "main": "index.js",
@@ -48,7 +48,7 @@
     "node": ">=18"
   },
   "dependencies": {
-    "@patricktabar/eslint-config-base": "^1.1.0",
+    "@patricktabar/eslint-config-base": "^1.2.0",
     "@stylistic/eslint-plugin": "^2.1.0"
   }
 }
