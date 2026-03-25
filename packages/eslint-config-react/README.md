@@ -1,42 +1,61 @@
-# ESlint Base Configuration
+# ESLint React Configuration
+
+Shareable React ESLint flat config built on top of `@patricktabar/eslint-config-base`.
+
+## Requirements
+
+- ESLint `^10.0.0`
+- Node `^20.19.0 || ^22.13.0 || >=24.0.0`
 
 ## Installation
 
-You can install this ESLint configuration using npm:
-
 ```shell
-npm install @patricktabar/eslint-config-react --save-dev
+npm install --save-dev eslint @patricktabar/eslint-config-react
 ```
 
-## Using this Shareable Configuration
+## Usage
 
-To use a shareable config, import the package inside of an eslint.config.js file and add it into the exported array, like this:
+Use the package from an `eslint.config.js` file:
 
 ```js
-// eslint.config.js
+import configReact from '@patricktabar/eslint-config-react';
 
-import configBase from '@patricktabar/eslint-config-react';
-
-export default [...configBase];
+export default [...configReact];
 ```
 
-## Overriding Settings from this Shareable Configuration
+## What it includes
 
-You can override settings from the shareable config by adding them directly into your eslint.config.js file after importing the shareable config. For example:
+- everything from `@patricktabar/eslint-config-base`
+- JSX language support for `*.js`, `*.mjs`, `*.cjs`, and `*.jsx` files
+- `eslint-plugin-react-hooks` recommended flat config
+- `eslint-plugin-jsx-a11y` recommended flat config
+- React version detection settings
+
+## Customizing rules
+
+Add overrides after the shared config:
 
 ```js
-// eslint.config.js
-
-import configBase from '@patricktabar/eslint-config-react';
+import configReact from '@patricktabar/eslint-config-react';
 
 export default [
-  ...configBase,
-
-  rules: {
-     semi: [2, "always"]
-  }
+  ...configReact,
+  {
+    rules: {
+      'jsx-a11y/no-noninteractive-tabindex': 'off',
+    },
+  },
 ];
-
 ```
 
-[ESlint](https://eslint.org/docs/latest/use/configure/configuration-files)
+## Migrating from 1.x
+
+Version `2.x` is a breaking release.
+
+- it targets ESLint `10`
+- it exports flat config arrays instead of legacy `.eslintrc` config
+- it requires a root `eslint.config.js` file
+
+## Reference
+
+- [ESLint configuration files](https://eslint.org/docs/latest/use/configure/configuration-files)

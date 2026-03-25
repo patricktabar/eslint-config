@@ -1,11 +1,3 @@
-module.exports = {
-  extends: ['eslint-plugin-jsx-a11y'].map((path) => require.resolve(path)),
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-  rules: {},
-};
+const jsxA11y = require('eslint-plugin-jsx-a11y');
+
+module.exports = jsxA11y.flatConfigs.recommended;

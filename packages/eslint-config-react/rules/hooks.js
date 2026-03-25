@@ -1,11 +1,3 @@
-module.exports = {
-  extends: ['eslint-plugin-react-hooks'].map((path) => require.resolve(path)),
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-  rules: {},
-};
+const reactHooks = require('eslint-plugin-react-hooks');
+
+module.exports = reactHooks.configs.flat.recommended;
